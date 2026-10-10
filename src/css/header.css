@@ -18,6 +18,64 @@
   gap: 15px;
 }
 
+.header-logo {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 76px;
+  height: 60px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 18px 6px 18px 6px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.04));
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-size: 32px;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: -3px;
+  line-height: 1;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  user-select: none;
+  transition: transform 250ms ease, box-shadow 250ms ease;
+}
+
+.header-logo::after {
+  content: '';
+  position: absolute;
+  bottom: 9px;
+  width: 24px;
+  height: 3px;
+  border-radius: 3px;
+  background: #ffd166;
+}
+
+.header-logo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+body.theme-light .header-logo {
+  color: #422007;
+  text-shadow: none;
+}
+
+body.theme-light .header-logo::after {
+  background: #422007;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header-logo {
+    transition: none;
+  }
+
+  .header-logo:hover {
+    transform: none;
+  }
+}
+
 .header-form-input {
   height: 40px;
   padding-left: 5px;
