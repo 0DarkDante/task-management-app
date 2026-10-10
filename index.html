@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/task-management-app/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla App Template</title>
+    <script type="module" crossorigin src="/task-management-app/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/task-management-app/assets/vendor-DC9Me2SB.js">
+    <link rel="stylesheet" crossorigin href="/task-management-app/assets/index-T89nZYl3.css">
+  </head>
+  <body class="theme-dark">
+    <header class="header">
+  <div class="container header-container">
+    <span class="header-logo">VK</span>
+    <div class="header-right-side-wrapper">
+      <button id="themeToggle" class="theme-toggle-button">Change Theme</button>
+      <form class="header-form" id="task-form">
+        <input
+          class="header-form-input"
+          type="text"
+          name="taskName"
+          placeholder="Title"
+        />
+        <input
+          class="header-form-input"
+          type="text"
+          name="taskDescription"
+          placeholder="Description"
+        />
+        <button class="header-form-btn" type="submit">Add</button>
+      </form>
+    </div>
+  </div>
+</header>
+
+
+    <main>
+      <!-- Loads the specified .html file -->
+      <section>
+  <div class="container">
+    <ul class="tasks-list" id="task-list">
+
+    </ul>
+  </div>
+</section>
+
+    </main>
+
+  </body>
+</html>
